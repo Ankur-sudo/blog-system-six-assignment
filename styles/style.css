@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Poppins:wght@300;400;500;600;700;800;900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+
+.mulish-font {
+  font-family: "Mulish", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+}
+
+/* hover button */
+.menu {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .menu-item {
+    display: inline-block;
+    position: relative;
+  }
+  
+  .menu-item a img {
+    display: block;
+  }
+  
+  .menu-item .tooltip {
+    visibility: hidden;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    text-align: center;
+    padding: 5px 5px;
+    border-radius: 4px;
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: visibility 0.2s ease-in-out;
+  }
+  
+  .menu-item:hover .tooltip {
+    visibility: visible;
+  }
+  

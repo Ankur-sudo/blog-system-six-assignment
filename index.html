@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog System</title>
+    <link rel="shortcut icon" href="images/fav-icon.png" type="image/x-icon">
+    <!-- daisyUI -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- vanilla CSS -->
+    <link rel="stylesheet" href="styles/style.css">
+
+</head>
+
+<body class="mx-2 mulish-font md:mx-28">
+    <header>
+        <nav class="md:mt-4">
+            
+            <!-- navbar -->
+            <div class="navbar bg-base-100">
+                <div class="navbar-start">
+                    <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </div>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                            <li class="menu-item" data-tooltip="Home"><a><img src="icons/home2.jpg" alt=""></a></li>
+                            <li class="menu-item" data-tooltip="Edit"><a><img src="icons/pencil2.jpg" alt=""></a></li>
+                            <li class="menu-item" data-tooltip="Add"><a><img src="icons/add2.jpg" alt=""></a></li>
+                            <li class="menu-item" data-tooltip="Flag"><a><img src="icons/flag2.jpg" alt=""></a></li>
+                        </ul>
+                    </div>
+                    <a class="btn btn-ghost text-4xl font-black text-[#12132D] ">IrIna</a>
+                </div>
+                <div class="justify-end flex-1">
+                    <div class="hidden navbar-center lg:flex">
+                        <ul class="px-1 menu menu-horizontal">
+                            <li class="menu-item" data-tooltip="Home"><a><img src="icons/home2.jpg" alt=""></a></li>
+                            <li class="menu-item" data-tooltip="Edit"><a><img src="icons/pencil2.jpg" alt=""></a></li>
+                            <li class="menu-item" data-tooltip="Add"><a><img src="icons/add2.jpg" alt=""></a></li>
+                            <li class="menu-item" data-tooltip="Flag"><a><img src="icons/flag2.jpg" alt=""></a></li>
+                        </ul>
+                    </div>
+                    <div class="">
+                        <a class="btn rounded-[50px]  md:text-xl text-[#FFFFFF] font-bold md:px-[40px]  bg-[#797DFC]">Sign
+                            In</a>
+                    </div>
+                </div>
+
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <!-- banner section -->
+            <div class="hero min-h-[550px] bg-[#12132D] rounded-[32px] ">
+                <img class="relative w-full mt-[520px] md:mt-[210px]" src="images/bgbanner.png" alt="">
+                <div class="hero-content text-start">
+                    <div class="relative mb-[330px] md:mb-0 md:mr-[600px]">
+                        <h1 class="text-6xl font-black text-[#FFFFFF] ">Welcome to the <br><span
+                                class="text-[#797DFC]">IrIna</span> Forum </h1>
+                        <p class="py-6 text-[#FFFFFFCC]">Share your favorite opinion and win and wp <br> forum coffee
+                            mug!</p>
+                        <!-- search bar -->
+                        <label class="input input-bordered rounded-[50px] flex items-center  gap-2">
+                            <input type="text" class="grow " placeholder="Search" />
+                            <span
+                                class="badge relative  p-5 text-xl font-bold bg-[#797DFC] text-[#FFFFFF] badge-info"><a
+                                    href="#">Search</a></span>
+                        </label>
+                    </div>
+                </div>
+                <div class="md:relative  md:ml-[700px]">
+                    <a href="#"><img class="mt-[440px] md:mt-0" src="images/Frame 9.png" alt=""></a>
+                </div>
+            </div>
+        </section>
+        <section>
+            <!--Latest post section start  -->
+            <div class="gap-4 mt-4 mb-10  auto lg:mt-24">
+                <div>
+                    <h1 class="text-[40px] font-black text-[#12132D] text-center ">Let’s Discuss</h1>
+                </div>
+                <div>
+                    <p class="text-[18px] font-normal text-[#12132D99] text-center items-center">Yes, you can run unit
+                        tests and view the results
+                        directly within the app. The <br> integrated testing features allow for a streamlined .</p>
+                </div>
+            </div>
+        </section>
+        <section>
+            <!-- Discuss Card -->
+            <div class="grid justify-between grid-cols-1 md:flex ">
+                <div id="posts-container">
+                    <!-- <div class="flex">
+                        <div class="relative">
+                            <img src="icons/profile.png" alt="">
+                        </div>
+                        <div class="absolute ml-14">
+                            <img src="icons/Status (2).png" alt="">
+                        </div> -->
+                </div>
+
+                <div class="w-[374px] mt-8 h-[465px] border rounded-3xl bg-[#797DFC0D] ">
+                    <div class="flex justify-between p-4">
+                        <div>
+                            <h2 class="font-bold text-xl text-[#12132D]">Title</h2>
+                        </div>
+                        <div class="text-[16px] text-[#12132D99] font-normal">Mark as read(<span>4</span>)</div>
+                    </div>
+                    <div class="w-[326px] p-2 h-[82px] ml-5 mt-4 border bg-[#FFFFFF] rounded-2xl">
+
+                        <div class="flex gap-12 ">
+                            <div class="font-semibold text-[16px] text-[#12132D]">
+                                10 Kids Unaware of Their <br> Halloween Costume
+                            </div>
+                            <div class="flex mt-6 ">
+                                <div><img src="icons/eye.png" alt=""> </div>
+                                <div><span>1,568</span></div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </section>
+
+        <section>
+            <!-- join our form section  -->
+            <div class="grid grid-cols-1 lg:flex justify-between bg-[#12132D] mt-10 rounded-3xl">
+                <div class="p-4 lg:p-20 ">
+                    <div>
+                        <h2 class="my-6 text-3xl font-bold text-white">Join Our Forum</h2>
+                    </div>
+                    <div>
+                        <p class="text-xl text-white text-[#FFFFFFCC] mb-6">Share your favorite opinion and win and wp
+                            forum coffee mug! Yes, you can <br> run unit tests and view the results directly within the
+                            app. </p>
+                    </div>
+                    <div class="flex items-center justify-center sm:flex lg:justify-start"><button
+                            class="btn bg-[#797DFC] text-xl font-bold text-[#FFFFFF]">Registered Now</button></div>
+                </div>
+                <div><img src="images/joinforum.png" alt=""></div>
+            </div>
+
+        </section>
+        <section>
+            <!--Latest post section   -->
+            <div class="gap-4 mb-10  md:mt-4 auto lg:mt-10">
+                <div>
+                    <h1 class="text-3xl font-bold text-center ">Latest Posts</h1>
+                </div>
+                <div>
+                    <p class="items-center text-xl text-center">Yes, you can run unit tests and view the results
+                        directly within the app. The <br> integrated testing features allow for a streamlined .</p>
+                </div>
+            </div>
+
+        </section>
+
+        <section>
+            <!-- latest card section  -->
+
+            <!-- first card -->
+            <div id="newpost-container" class="gap-3  sm:grid sm:grid-cols-1 lg:grid lg:grid-cols-3 auto">
+                <!-- <div class="p-12 mt-3 border  lg:w-full auto rounded-3xl"> -->
+                    <!-- <div><img src="images/profile (2).png" alt=""></div>
+                        <div class="flex gap-4 my-4">
+                            <div><img src="images/bag.png" alt=""></div>
+                            <div>
+                                <h2>29 January 2024</h2>
+                            </div>
+                        </div>
+                        <div>
+                            <h2 class="mb-4 text-2xl font-bold">What will a mars habitat force that impact in our daily
+                                life!!!</h2>
+                        </div>
+                        <div>
+                            <p>Yes, you can run unit tests and view the <br> results directly within the app. </p>
+                        </div>
+                        <div class="flex gap-4 mt-4">
+                            <div><img src="images/profile (1).png" alt=""></div>
+                            <div>
+                                <div>
+                                    <h2 class="text-xl font-bold">Cameron Williamson</h2>
+                                </div>
+                                <div>
+                                    <h2>Unknown</h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div> -->
+
+                    <!-- second card -->
+                    <!-- <div class="p-12 mt-3 border  lg:w-full auto rounded-3xl">
+                        <div><img src="images/profile (2).png" alt=""></div>
+                        <div class="flex gap-4 my-4">
+                            <div><img src="images/bag.png" alt=""></div>
+                            <div>
+                                <h2>29 January 2024</h2>
+                            </div>
+                        </div>
+                        <div>
+                            <h2 class="mb-4 text-2xl font-bold">What will a mars habitat force that impact in our daily
+                                life!!!</h2>
+                        </div>
+                        <div>
+                            <p>Yes, you can run unit tests and view the <br> results directly within the app. </p>
+                        </div>
+                        <div class="flex gap-4 mt-4">
+                            <div><img src="images/profile (1).png" alt=""></div>
+                            <div>
+                                <div>
+                                    <h2 class="text-xl font-bold">Cameron Williamson</h2>
+                                </div>
+                                <div>
+                                    <h2>Unknown</h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div> -->
+
+                    <!-- third card -->
+                    <!-- <div class="p-12 mt-3 border  lg:w-full auto rounded-3xl">
+                        <div><img src="images/profile (2).png" alt=""></div>
+                        <div class="flex gap-4 my-4">
+                            <div><img src="images/bag.png" alt=""></div>
+                            <div>
+                                <h2>29 January 2024</h2>
+                            </div>
+                        </div>
+                        <div>
+                            <h2 class="mb-4 text-2xl font-bold">What will a mars habitat force that impact in our daily
+                                life!!!</h2>
+                        </div>
+                        <div>
+                            <p>Yes, you can run unit tests and view the <br> results directly within the app. </p>
+                        </div>
+                        <div class="flex gap-4 mt-4">
+                            <div><img src="images/profile (1).png" alt=""></div>
+                            <div>
+                                <div>
+                                    <h2 class="text-xl font-bold">Cameron Williamson</h2>
+                                </div>
+                                <div>
+                                    <h2>Unknown</h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div> -->
+
+
+                <!-- </div> -->
+
+
+            </div>
+
+        </section>
+
+    </main>
+    <footer>
+        <!-- footer section -->
+        <div class="bg-[#12132D0D] border my-3 p-4  rounded-2xl auto mt-10 lg:p-40">
+            <div class="text-center">
+                <div>
+                    <h2 class="text-4xl font-bold lg:mb-6">IrIna </h2>
+                </div>
+                <div>
+                    <p class="mb-4 font-semibold">
+
+                        IrIna, an acronym for "Reflective Transformation," embodies a philosophy of evolution through
+                        introspection and adaptation. Rooted in the idea that growth emerges from a deep understanding
+                        of one's past experiences. </p>
+                </div>
+            </div>
+
+            <div class="flex items-center justify-center gap-6 mb-3 lg:mb-12">
+                <div><img src="icons/twiter.png" alt=""></div>
+                <div><img src="icons/fb.png" alt=""></div>
+                <div><img src="icons/instra.png" alt=""></div>
+                <div><img src="icons/github.png" alt=""></div>
+            </div>
+            <div>
+                <h2 class="text-xl font-bold text-center">2017, All Rights Reserved.</h2>
+            </div>
+        </div>
+
+    </footer>
+
+
+    <!-- js link -->
+    <script src="scripts/blog.js"></script>
+</body>
+
+</html>
